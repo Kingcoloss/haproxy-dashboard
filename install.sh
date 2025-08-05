@@ -21,7 +21,7 @@ cat << EOF | sudo tee /etc/systemd/system/haproxy-configurator.service
 Description=Haproxy-Configurator Service By Alon Zur
 
 [Service]
-ExecStart=/usr/bin/python3 /etc/haproxy-configurator/app.py
+ExecStart=/home/admin/.pyenv/versions/3.13.5/bin/python /etc/haproxy-configurator/app.py
 Restart=always
 RestartSec=3
 StandardOutput=/var/log/haproxy-configurator_std_output.log
